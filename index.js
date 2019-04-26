@@ -70,7 +70,7 @@ function timeStringParse(timeStr) {
   /**
    * 计算日期
    */
-  if (/[0-9]{1,2}-[0-9]{1,2}/.test(timeStr)) {
+  if (/^[0-9]{1,2}-[0-9]{1,2}$/.test(timeStr)) {
     const timeArr = timeStr.match(/[0-9]+/g);
     const time = moment();
 
@@ -86,7 +86,7 @@ function timeStringParse(timeStr) {
   /**
    * 日期中包含年份的
    */
-  if (/[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}/.test(timeStr)) {
+  if (/^[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}$/.test(timeStr)) {
     const timeArr = timeStr.match(/[0-9]+/g);
     const time = moment();
 
