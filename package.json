@@ -1,0 +1,26 @@
+{
+  "name": "time-string-parse",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "husky": "^2.1.0",
+    "lint-staged": "^8.1.5"
+  }
+}
