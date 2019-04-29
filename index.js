@@ -74,7 +74,7 @@ function timeStringParse(timeStr) {
     const timeArr = timeStr.match(/[0-9]+/g);
     const time = moment();
 
-    const MM = Number(timeArr[0]);
+    const MM = Number(timeArr[0] - 1);
     const DD = Number(timeArr[1]);
 
     time.date(DD);
@@ -91,7 +91,7 @@ function timeStringParse(timeStr) {
     const time = moment();
 
     const YYYY = Number(timeArr[0]);
-    const MM = Number(timeArr[1]);
+    const MM = Number(timeArr[1] - 1);
     const DD = Number(timeArr[2]);
 
     time.date(DD);
