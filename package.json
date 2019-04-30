@@ -1,5 +1,5 @@
 {
-  "name": "time-string-parse",
+  "name": "@48/time-string-parse",
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
